@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Claude Code session / local config
+.claude/
+
+# session transcripts stay local (out of history)
+logs/*.jsonl
+
+# Internal working material — kept local, not published
+logs/
+go-port/
+sites/
+proposals/
+inspiration/
+plan.md
+under-review.md
+poc-ai-stacker-intent_260511.md
+briefing backup 260421.md
+formbarkeit-des-ui_K260416A.txt

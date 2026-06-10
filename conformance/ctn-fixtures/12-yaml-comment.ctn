@@ -1,0 +1,5 @@
+CTN: standard
+# This is a YAML comment
+key: value
+---
+body

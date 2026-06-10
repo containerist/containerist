@@ -1,0 +1,11 @@
+CTN: items
+class: flex
+items:
+  -
+    title: "Eine Raumstation retten"
+    url: https://example.com/post/1
+    kicker: Anmut und Demut
+  -
+    title: "Wabi-Sabi"
+    url: https://example.com/post/2
+    kicker: Kopfzeiler

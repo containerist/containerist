@@ -1,0 +1,12 @@
+## put the path into index.php
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteBase /
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteRule ^(.*)$ /index.php?q=$1 [L,QSA]
+   
+</IfModule>
+
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .txt
