@@ -4,7 +4,7 @@
 
 A web page is a flat list of autonomous, self-sufficient **containers**. Each container has a public URL (its *origin*), reveals a machine-readable **structure** (CTN), and is drawn through a consumer-chosen **skin**. Containers can be *federated* — shown on any site, in any stack, served from a different origin than the page displaying them — while authorship stays with the origin's author.
 
-Containerist is a small, portable framework built on that idea, designed to stay legible to both humans and the LLMs that increasingly maintain it. This repository is the **specification and hub**: the canonical formats, the design rationale, and the map to the three implementations.
+Containerist is a small, portable framework built on that idea, designed to stay legible to both humans and the LLMs that increasingly maintain it. This repository is the **specification and hub**: the canonical formats, the design rationale, and the map to its implementations.
 
 ---
 
@@ -34,15 +34,21 @@ The formats are the authority — no single implementation owns them. Conform to
 
 Per-language notes live in **[spec/implementations/](spec/implementations/)** (`CTN-in-PHP.md`, `CTN-in-TS.md`, `CTN-in-Go.md`, and the rest). Language-agnostic conformance fixtures are in **[conformance/](conformance/)** — pass them and your parser is conformant on the enumerated edge cases.
 
-## The three implementations
+## Implementations
 
-Each is a faithful realization of the specs above. **The PHP implementation is the reference — it leads; the others follow.**
+Three full **reference implementations**, each a faithful realization of the specs above. **The PHP implementation is the reference — it leads; the others follow.**
 
 | Language | Repo | Stack |
 |---|---|---|
 | **PHP** | [containerist-php](https://github.com/containerist/containerist-php) | Reference implementation |
 | **TypeScript** | [containerist-ts](https://github.com/containerist/containerist-ts) | Next.js / React |
 | **Go** | [containerist-go](https://github.com/containerist/containerist-go) | Native Go |
+
+Plus a lighter member of the family:
+
+| Project | Repo | What it is |
+|---|---|---|
+| **conti** | [conti](https://github.com/containerist/conti) | A prototype-scale *subset* of Containerist on Next.js / React — keeps the CTN format, stacks, and typed content; drops federation, computed mods, and multi-realm invocation, and swaps Mustache skins for React components |
 
 ---
 
